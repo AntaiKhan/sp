@@ -1,0 +1,47 @@
+@(message: String, style: String = "scala")
+@defining(play.core.PlayVersion.current) { version =>
+    <div id="content" class="panel panel-default form-container">
+        <article class="panel-body">
+            <form role="form" action="#">
+                <h3 class="text-center margin-xl-bottom">Sign up</h3>
+
+                <div class="form-group">
+                    <label class="control-label">Name Of Organisation</label>
+                    <input type="text" class="form-control input-md" name="org_name" placeholder="Name Of Organisation">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Contact Address</label>
+                    <textarea type="text" class="form-control input-md" name="contact_address" placeholder="Contact Address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email Address</label>
+                    <input type="email" class="form-control input-md" name="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Phone Number</label>
+                    <input type="text" class="form-control input-md" name="phone_no" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <input type="password" class="form-control input-md" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password Confirmation</label>
+                    <input type="password" class="form-control input-md" name="confpass" placeholder="Confirm Password">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="submit" name="submit" value="Sign Up" class="btn btn-primary btn-block btn-lg">
+                </div>
+            </form>
+        </article>
+        <div class="panel-body text-center">
+            <div class="margin-bottom text-muted">
+                By signing up, you agree to the <a class="text-muted text-underline" href="javascript:;">Terms of Service</a>
+            </div>
+            <div>
+                Already have an account? <a class="text-primary-dark" href="pages-sign-in.html">Sign in</a>
+            </div>
+        </div>
+    </div>
+}

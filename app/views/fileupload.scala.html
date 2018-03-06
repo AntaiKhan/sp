@@ -1,0 +1,23 @@
+@(style: String = "scala")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+@helper.form(action = routes.HomeController.upload, 'enctype -> "multipart/form-data") {
+
+<div class="panel panel-default form-container">
+    <article class="panel-body">
+    <h3 class="text-center margin-xl-bottom">Upload KYC &amp; Service Details</h3>
+        <form role="form" action="#">
+            <div class="form-group">
+                <label class="control-label">File: </label>
+                <input type="file" name="file_upload"><br>
+
+                    <input type="submit" name="submit" value="Upload" class="btn btn-primary btn-block btn-lg">
+
+            </div>
+        </form>
+    </article>
+</div>
+}
+
+}
